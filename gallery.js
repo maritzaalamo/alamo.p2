@@ -59,11 +59,17 @@ mRequest.onreadystatechange = function(){
 // Array holding GalleryImage objects (see below).
 var mImages = [];
 
+function iterateJSON(){
+  for (images; json; i++) {
+  var galleryImage = 0;
+}
+}
+
 // Holds the retrived JSON information
 var mJson;
 
 // URL for the JSON to load by default
-// Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
+ // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = 'images.json';
 
 
@@ -79,7 +85,7 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 $(document).ready( function() {
 
 	// This initially hides the photos' metadata information
-	$('.details').eq(0).hide();
+	//$('.details').eq(0).hide();
 
 });
 
