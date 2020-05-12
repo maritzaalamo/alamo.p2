@@ -12,9 +12,9 @@ body {
 	margin-right: auto;
 	background-color: white;
 	border-radius: 2px;
-}	
+}
 
-#slideShow {	
+#slideShow {
 	position: relative;
 }
 
@@ -27,10 +27,11 @@ body {
 .moreIndicator {
 	height: 50px;
 	width: 50px;
-	position: absolute;
+	position: relative;
 	z-index: 3;
 	opacity: .8;
-	top: 0px;
+	top: 90;
+	vertical-align: bottom;
 }
 
 .thumbnail {
@@ -49,12 +50,12 @@ body {
 	position: relative;
 }
 
-#prevPhoto {
+#prevPhoto:hover {
 	height: 42px;
 	width: 42px;
 }
 
-#nextPhoto {
+#nextPhoto:hover {
 	height: 42px;
 	width: 42px;
 }
@@ -70,12 +71,18 @@ body {
 
 /*Add CSS styles to rotate the element 90deg
 Make it animate nicely. You'll need CSS3 for this*/
-.rot90 {}
+.rot90 {
+	transform: rotate(90deg);
+}
 
 /*Add CSS styles to rotate the element 180deg
 Make it animate nicely. You'll need CSS3 for this*/
-.rot180 {}
+.rot180 {
+
+}
 
 /*Add CSS styles to rotate the element 270deg
 Make it animate nicely. You'll need CSS3 for this*/
-.rot270 {}
+.rot270 {
+	transform: rotate(270deg);
+}

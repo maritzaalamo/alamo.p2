@@ -50,12 +50,12 @@ body {
 	position: relative;
 }
 
-#prevPhoto {
+#prevPhoto:hover {
 	height: 42px;
 	width: 42px;
 }
 
-#nextPhoto {
+#nextPhoto:hover {
 	height: 42px;
 	width: 42px;
 }

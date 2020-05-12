@@ -1,4 +1,4 @@
-// requestAnim shim layer by Paul Irish
+ // requestAnim shim layer by Paul Irish
     window.requestAnimFrame = (function(){
       return  window.requestAnimationFrame       ||
               window.webkitRequestAnimationFrame ||
@@ -130,6 +130,12 @@ window.addEventListener('load', function() {
 	console.log('window loaded');
 
 }, false);
+
+
+
+$(document).click(function() {
+  $( "div(.details)" ).slideToggle( "slow" );
+});
 
 function GalleryImage(location, description, date) {
 	//implement me as an object to hold the following data about an image:ss
