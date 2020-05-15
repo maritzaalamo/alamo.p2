@@ -140,6 +140,26 @@ $(document).click(function() {
   $( "div(.details)" ).slideToggle( "slow" );
 });
 
+
+$( "#position2" ).position({
+  my: "left top",
+  at: "left top",
+  of: "#nav"
+});
+
+$( "#position3" ).position({
+  my: "right center",
+  at: "right bottom",
+  of: "#nextPhoto"
+});
+$( document ).mousemove(function( event ) {
+  $( "#" ).position({
+    my: "left+3 bottom-3",
+    of: event,
+    collision: "fit"
+  });
+});
+
 function GalleryImage(location, description, date) {
 	//implement me as an object to hold the following data about an image:ss
   var location;
