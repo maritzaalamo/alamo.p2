@@ -141,7 +141,7 @@ $(document).click(function() {
 });
 
 
-$( "#dataTable tbody tr" ).on( "click", function() {
+$( "#dataTable tbody tr" ).on( "nextPhoto","prevPhoto" function() {
   console.log( $( this ).text() );
 });
 
