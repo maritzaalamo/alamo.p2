@@ -131,6 +131,9 @@ window.addEventListener('load', function() {
 
 }, false);
 
+$( "#slideShow" ).append( $( "img" ).first().hasClass( "moreIndicator" ).toString() );
+$( "#slideShow" ).append( $( "img" ).last().hasClass( "moreIndicator" ).toString() );
+$( "#slideShow" ).append( $( "img" ).hasClass( "moreIndicator" ).toString() ) ;
 
 
 $(document).click(function() {
