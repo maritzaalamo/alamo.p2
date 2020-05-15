@@ -141,10 +141,8 @@ $(document).click(function() {
 });
 
 
-$( "#position2" ).position({
-  my: "left top",
-  at: "left top",
-  of: "#nav"
+$( "#dataTable tbody tr" ).on( "click", function() {
+  console.log( $( this ).text() );
 });
 
 $( "#position3" ).position({
