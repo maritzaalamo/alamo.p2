@@ -131,19 +131,8 @@ window.addEventListener('load', function() {
 
 }, false);
 
-$( "#slideShow" ).append( $( "img" ).first().hasClass( "moreIndicator" ).toString() );
-$( "#slideShow" ).append( $( "img" ).last().hasClass( "moreIndicator" ).toString() );
-$( "#slideShow" ).append( $( "img" ).hasClass( "moreIndicator" ).toString() ) ;
 
 
-$(document).click(function() {
-  $( "div(.details)" ).slideToggle( "slow" );
-});
-
-
-$( "#dataTable tbody tr" ).on( "nextPhoto","prevPhoto" function() {
-  console.log( $( this ).text() );
-});
 
 $("#nextPhoto").click(function(){
   swapPhoto();
