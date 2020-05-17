@@ -145,17 +145,12 @@ $( "#dataTable tbody tr" ).on( "nextPhoto","prevPhoto" function() {
   console.log( $( this ).text() );
 });
 
-$( "#position3" ).position({
-  my: "right center",
-  at: "right bottom",
-  of: "#nextPhoto"
+$("#nextPhoto").click(function(){
+  swapPhoto();
 });
-$( document ).mousemove(function( event ) {
-  $( "#" ).position({
-    my: "left+3 bottom-3",
-    of: event,
-    collision: "fit"
-  });
+
+$("#prevPhoto").click(function(){
+  swapPhoto();
 });
 
 function GalleryImage(location, description, date) {
