@@ -72,6 +72,7 @@ mRequest.onreadystatechange = function(){
 }
 
 
+
 // Array holding GalleryImage objects (see below).
 var mImages = [];
 
@@ -117,12 +118,14 @@ function iterateJSON0(mJson){
 
 
 $(document).ready( function() {
-
-  fetchJSON();
-
+  if(this.readyState == 4 && this.status == 200){
+    mJson = JSON.parse(mRequest.responseText);
+    fetchJSON();
+  }
 	// This initially hides the photos' metadata information
 	//$('.details').eq(0).hide();
-
+  mRequest.open("GET",mURL, true);
+  mRequest.send();
 });
 
 window.addEventListener('load', function() {
