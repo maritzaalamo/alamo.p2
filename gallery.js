@@ -99,7 +99,7 @@ function fetchJSON(){
   mRequest.send();
 }
 
-
+//calling function iterateJSON
 function iterateJSON0(mJson){
 
   for(x = 0; x < mJson.images.length; x++){
@@ -116,7 +116,7 @@ function iterateJSON0(mJson){
 
 
 
-
+//if statement for fetchJSON
 $(document).ready( function() {
   if(this.readyState == 4 && this.status == 200){
     mJson = JSON.parse(mRequest.responseText);
@@ -134,19 +134,20 @@ window.addEventListener('load', function() {
 
 }, false);
 
+// calls onclick of toggleDetails
 $(document).ready(function(){
     toggleDetails();
 });
 
-
+//explains swapPhoto for the id nextPhoto
 $("#nextPhoto").click(function(){
   swapPhoto();
 });
-
+//explains swapPhoto for the id nextPhoto
 $("#prevPhoto").click(function(){
   swapPhoto();
 });
-
+//shows the location and description and date of each gallerImage that shows
 function GalleryImage(location, description, date) {
 	//implement me as an object to hold the following data about an image:ss
   var location;
