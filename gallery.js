@@ -134,7 +134,9 @@ window.addEventListener('load', function() {
 
 }, false);
 
-
+$(document).ready(function(){
+    toggleDetails();
+});
 
 
 $("#nextPhoto").click(function(){
